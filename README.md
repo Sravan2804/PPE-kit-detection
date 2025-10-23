@@ -1,7 +1,19 @@
 # PPE Kit Detection
 
-Detecting Personal Protective Equipment (PPE) on workers (helmets, vests, gloves, etc.) using YOLOv8.  
-This project is built for safety compliance monitoring in workplaces, especially in industrial or construction settings.
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sravan2804/PPE-kit-detection/blob/main/ppe-det.ipynb)
+
+This project focuses on **detecting Personal Protective Equipment (PPE)** such as helmets, masks, and safety vests using **YOLOv8l**, a state-of-the-art object detection model by Ultralytics.  
+It helps ensure workplace safety compliance by automatically identifying whether individuals are properly equipped in industrial environments.
+
+---
+
+
+## 🚀 Features
+- Real-time detection of PPE compliance
+- Multi-class object detection (10 PPE-related categories)
+- Trained and fine-tuned on custom dataset
+- Optimized for inference on both images and video
+- Supports Google Colab and local GPU environments
 
 ---
 
@@ -13,6 +25,37 @@ Many workplace accidents are preventable if safety protocols are followed. One c
 - **Flags missing items** (e.g. no helmet, no gloves)
 - Can be extended to **real-time inference** (camera / CCTV) or batch image/video processing
 - Is built using the **Ultralytics YOLOv8** framework for object detection
+
+
+---
+
+## Detected Classes
+| Label | Description |
+|:--|:--|
+| Hardhat | Worker wearing a helmet |
+| Mask | Worker wearing a face mask |
+| NO-Hardhat | Worker without a helmet |
+| NO-Mask | Worker without a face mask |
+| NO-Safety Vest | Worker without a safety vest |
+| Person | Generic human detection |
+| Safety Cone | Road/industrial safety cone |
+| Safety Vest | Worker wearing a safety vest |
+| machinery | Construction or industrial machinery |
+| vehicle | Cars, trucks, or site vehicles |
+
+---
+
+## 🗂️ Repository Structure
+```
+PPE-kit-detection/
+│
+├── YOLO-weights/           # Trained YOLOv8l model weights
+├── results/                # Output images or videos after detection
+├── ppe-det.ipynb           # Colab notebook for training and evaluation
+├── inference.py            # Script for running detections locally
+├── requirements.txt        # Dependencies and library versions
+└── README.md               # Project documentation
+```
 
 ---
 
@@ -40,6 +83,8 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+---
+
 ### Explore the Training Notebook
 
 You can open the full Colab notebook that includes dataset setup, training, and inference steps here:
@@ -49,6 +94,8 @@ You can open the full Colab notebook that includes dataset setup, training, and 
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
   </a>
 </p>
+
+---
 
 ### Training & Inference
 
@@ -77,6 +124,7 @@ model.train(
 ```
 This will train and save results (weights, graphs, logs) in runs/ or whichever project folder is specified.
 
+---
 
 ### Results & Sample Detections
 
@@ -93,6 +141,7 @@ This is one of the frame from the video ppe2.mp4 before:
 Below is a sample detection result:
 <img width="1607" height="938" alt="image" src="https://github.com/user-attachments/assets/08d67369-1135-4e8b-bf6a-44b998f92beb" />
 
+---
 
 ### Future Improvements & Extensions
 
@@ -102,6 +151,8 @@ Below is a sample detection result:
 - Extend to video streams / live camera feeds
 - Collect more data under diverse lighting / environments
 - Evaluate and compare different backbone models (YOLOv7, YOLOv5, EfficientDet, etc.)
+
+---
 
 ### Contributing
 
@@ -113,6 +164,8 @@ Contributions, suggestions, and bug reports are welcome! Please open an issue or
 - Add unit / integration tests
 - Increase dataset diversity
 
+---
+
 ### References & Related Projects
 
 Here are some resources and related works for PPE / safety detection:
@@ -120,6 +173,8 @@ Here are some resources and related works for PPE / safety detection:
 - PPE detection using YOLOv8 (common approach in industry)
 - Dataset of Personal Protective Equipment (PPE) — a public dataset for PPE detection 
 - Research on industrial safety and PPE datasets (e.g. SH17 dataset) 
+
+---
 
 ### License & Acknowledgements
 
@@ -132,3 +187,13 @@ Acknowledgements:
 - Dataset providers
 
 - Open source community
+
+### Author
+**Rama Sravan Gunda**  
+📍 University of Limerick | MEngg in Computer Vision & AI  
+📧 ramasravan007@gmail.com  
+🌐 [GitHub Profile](https://github.com/Sravan2804)
+
+---
+
+> “Safety doesn’t happen by accident — it’s detected by design.”
