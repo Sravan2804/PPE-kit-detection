@@ -60,7 +60,7 @@ You can open the full Colab notebook that includes dataset setup, training, and 
 
 2. Training (in notebook or via script)
 
-Open ppe_detection.ipynb (in Jupyter or Google Colab), or call your training function in Python, for example:
+Open ppe_det.ipynb (in Jupyter or Google Colab), or call your training function in Python, for example:
 ```
 from ultralytics import YOLO
 
