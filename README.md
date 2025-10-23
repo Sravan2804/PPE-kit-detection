@@ -70,15 +70,15 @@ PPE-kit-detection/
 ### Installation
 
 1. Clone the repository:
-   ```bash
+```bash
    git clone https://github.com/<your-username>/PPE-kit-detection.git
    cd PPE-kit-detection
+```
 2. Set up a virtual environment (optional but recommended):
 ```
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
-
 3. Install dependencies:
 ```
 pip install -r requirements.txt
