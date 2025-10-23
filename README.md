@@ -87,7 +87,7 @@ Tip: Include in this section some key metrics (e.g. mAP@0.5, precision, recall) 
 - Precision	 0.90
 - Recall	    0.85
 
-This is the image before:
+This is one of the frame from the video ppe2.mp4 before:
 <img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/1e1a51b1-6827-4a62-b795-55d60ea03b6f" />
 
 Below is a sample detection result:
