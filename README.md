@@ -45,7 +45,7 @@ pip install -r requirements.txt
 You can open the full Colab notebook that includes dataset setup, training, and inference steps here:
 
 <p align="center">
-  <a href="https://colab.research.google.com/github/Sravan2804/PPE-kit-detection/blob/main/ppe_detection.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/Sravan2804/PPE-kit-detection/blob/main/ppe_det.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
   </a>
 </p>
