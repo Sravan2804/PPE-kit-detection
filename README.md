@@ -82,10 +82,13 @@ This will train and save results (weights, graphs, logs) in runs/ or whichever p
 
 Tip: Include in this section some key metrics (e.g. mAP@0.5, precision, recall) and sample detection images or videos.
 
-Metric	Value
-mAP@0.5	0.87
-Precision	0.90
-Recall	0.85
+- Metric	    Value
+- mAP@0.5	 0.87
+- Precision	 0.90
+- Recall	    0.85
+
+This is the image before:
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/1e1a51b1-6827-4a62-b795-55d60ea03b6f" />
 
 Below is a sample detection result:
 <img width="1607" height="938" alt="image" src="https://github.com/user-attachments/assets/08d67369-1135-4e8b-bf6a-44b998f92beb" />
