@@ -196,4 +196,6 @@ Acknowledgements:
 
 ---
 
-> “Safety doesn’t happen by accident — it’s detected by design.”
+<p align="center">
+   “Safety doesn’t happen by accident — it’s detected by design.”
+</p> 
